@@ -10,6 +10,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+//要在AndroidManifest.xml加以下權限
+//<uses-permission android:name="android.permission.CAMERA"></uses-permission>
+//<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+//<uses-feature android:name="android.hardware.camera" />
+//<uses-feature android:name="android.hardware.camera.autofocus" />
 //以下程式碼不適用於Android6.0以上(Android6.0以後把權限分為一般權限和危險權限,相機屬於危險權限,程式碼要多加判斷句,但本程式碼還沒加)
 public class MainActivity extends AppCompatActivity {
     ImageView iv;
